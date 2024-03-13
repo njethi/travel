@@ -1,0 +1,1330 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width:device-width , initial-scale:1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <ul class="nav nav-pills bg-warning"> 
+        <li class="nav-item"> <a class="nav-link"><img src="fl.jpg"  style="width:100px;height:100px;" class="rounded-pill"></a> </li>
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="pill" href="#menu1" target="_blank"><img src="flglogo.png" style="width:100px;height:80px;"><br>Flights</a> </li> 
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="pill" href="#menu2" target="_blank"><img src="hlogo.png" style="width:100px;height:80px;"><br>Hotels</a> </li>
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="pill" href="#menu3" target="_blank"><img src="vlogo.jpg" style="width:100px;height:80px;"><br>Visa</a> </li>
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="pill" href="#menu4" target="_blank"><img src="hp.jpg" style="width:100px;height:80px;"><br>Holiday Packages</a></li>
+        <li class="nav-item dropdown"> <a class="nav-link" data-bs-toggle="pill" href="#menu5" target="_blank"><img src="download.png" style="width:100px;height:80px;"><br>More</a></li>
+    </ul>
+    <div class="tab-content"> 
+        <div class="tab-pane bg-success" id="menu1">
+            Search Flight
+            <br>
+            <br>
+            From:
+            <input type="text"/>
+            <br>
+            <br>
+            To:
+            <input type="text" />
+            <br>
+            <br>
+            Departure Date:
+            <input type="date" />
+            <br>
+            <br>
+            Return Date:
+            <input type="date" />
+            <br>
+            <br>
+            Adult:
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            Children:
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            Infact:
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            <br>
+            <br>
+            <input type="submit" value="Search" />
+        </div> 
+        <div class="tab-pane bg-success" id="menu2">
+            Search Hotels
+            <br>
+            <br>
+            City:
+            <input type="text" />
+            <br>
+            <br>
+            Check-In Date:
+            <input type="date" />
+            <br>
+            <br>
+            Check-Out Date:
+            <input type="date" />
+            <br>
+            <br>
+            Number Of Rooms:
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <br>
+            <br>
+            Adult:
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            Children:
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            Infact:
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            <br>
+            <br>
+            <input type="submit" value="Search" />
+        </div>
+        <div class="tab-pane bg-success" id="menu3">
+            <div style="background-image:url(banner-img.png);height:100%;">
+                <h1 style="padding:10px;" class="text-light">Get Your Visa</h1>
+                <br>
+                <h2 class="text-light">It's A Easy Process Way</h2>
+                <div style="padding:300px;">
+                    <input type="text" placeholder="Enter Your Destination For visa" />
+                    <input type="submit" value="Search" class="bg-warning"/>
+                </div>
+            </div>
+            <br>
+            Popular Visas Destination
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+ 
+                 <div class="carousel-indicators"> 
+                    <button type="button" data-bs-target="#demo" class="active" data-bs-slide-to="0"></button> 
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> 
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button> 
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+                </div> 
+
+                <div class="carousel-inner"> 
+                    <div class="carousel-item active"> 
+                        <img src="Australia_Thumbnail.png" class="mx-auto d-block" style="height:300px;width:300px;" />
+                        <br>
+                        Australia
+                        <br>
+                        From 16000Rs 
+                    </div> 
+                    <div class="carousel-item"> 
+                        <img src="Canada_Thumbnail.png" class="mx-auto d-block" style="height:300px;width:300px;" /> 
+                        <br>
+                        Canada
+                        <br>
+                        From 100000Rs 
+                    </div> 
+                    <div class="carousel-item"> 
+                        <img src="Dubai_UAE_Thumbnail.png" class="mx-auto d-block" style="height:300px;width:300px;" />
+                        <br>
+                        Dubai
+                        <br>
+                        From 4000Rs 
+                    </div>
+                    <div class="carousel-item"> 
+                        <img src="London_Eye_UK_Thumbnail.png" class="mx-auto d-block" style="height:300px;width:300px;" />
+                        <br>
+                        London 
+                        <br>
+                        From 22375Rs
+                    </div> 
+                    <div class="carousel-item"> 
+                        <img src="Malaysia_Thumbnail.png" class="mx-auto d-block" style="height:300px;width:300px;" />
+                        <br>
+                        Malasiya 
+                        <br>
+                        From 4550Rs
+                    </div> 
+                    <div class="carousel-item"> 
+                        <img src="NewZealand_Thumbnail.png" class="mx-auto d-block" style="height:300px;width:300px;" />
+                        <br>
+                        NewZelend 
+                        <br>
+                        From 18000Rs
+                    </div>
+                    <div class="carousel-item"> 
+                        <img src="Singapore_Thumbnail.png" class="mx-auto d-block" style="height:300px;width:300px;" />
+                        <br>
+                        Singapore
+                        <br>
+                        From 2456Rs 
+                    </div> 
+                    <div class="carousel-item"> 
+                        <img src="Thailand_Thumbnail.png" class="mx-auto d-block" style="height:300px;width:300px;" />
+                        <br>
+                        Thailand
+                        <br>
+                        From 3659Rs
+                    </div>  
+                </div> 
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span> 
+                </button> 
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"> <span class="carousel-control-next-icon"></span> 
+                </button> 
+            </div>
+        </div> 
+        <div class="tab-pane" id="menu4">
+            <ul class="nav nav-pills">
+            <ul class="nav nav-pills bg-secondary flex-column">
+                <li class="nav-item"><a class="nav-link"><h1 class="text-danger">India</h1></a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d1">Kashmir</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d2">Sikkim</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d3">Kerala</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d4">Andaman</a></li>
+            </ul>
+            <ul class="nav nav-pills bg-secondary flex-column">
+                <li class="nav-item"><a class="nav-link"><h1 class="text-danger">Asia</h1></a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d5">Srilanka</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d6">Thailand</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d7">Singapore</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d8">Bali</a></li>
+            </ul>
+            <ul  class="nav nav-pills bg-secondary flex-column">
+                <li class="nav-item"><a class="nav-link"><h1 class="text-danger">Europe</h1></a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d9">Germany</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d10">France</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d11">Switzerlend</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d12">Austriya</a></li>
+            </ul>
+            <ul  class="nav nav-pills bg-secondary flex-column">
+                <li class="nav-item"><a class="nav-link"><h1 class="text-danger">Australiya-NewZeeland</h1></a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d13">Australia</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d14">New-Zelend</a></li>
+            </ul>
+            <ul  class="nav nav-pills bg-secondary flex-column">
+                <li class="nav-item"><a class="nav-link"><h1 class="text-danger">Africa</h1></a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d15">Mauritius</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d16">South Africa</a></li>
+            </ul>
+            <ul  class="nav nav-pills bg-secondary flex-column">
+                <li class="nav-item"><a class="nav-link"><h1 class="text-danger">Middle-East</h1></a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d17">UAE-Dubai</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d18">Oman Muscut</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d19">Israel Jordan</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#d20">Baku</a></li>
+            </ul>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" id="d2">
+                    <h1 class="text-success">About Sikkim</h1>
+                    <img src="sikkim.png" style="float:right; height:100px; width:100px;" />
+                    <div>Sikkim is a treasure nestled away in the Himalayas. Sikkim is a small state in India's northeast. The state is renowned as the gateway to the Himalayas. With its picturesque landscapes, lush meadows, clear lakes, and high mountain ranges, Sikkim Tourism beckons travelers from far and wide. Whether you are a nature lover or an adrenaline junkie, this captivating place has a variety of experiences to satisfy your wanderlust.
+
+                        Sikkim tour packages appeal to all tastes and budgets, allowing you to explore the lush green valleys, clear lakes, and snow-capped peaks. Sikkim has a rich cultural past in addition to its stunning natural beauty. Delve into the captivating history and culture of Sikkim as you travel through its scenic landscapes and engage with its welcoming locals. From the snow-capped peaks of Kanchenjunga to the vibrant markets of Gangtok, countless must-explore things in Sikkim will leave you awe-inspired and yearning for more. A trip to Sikkim allows you to restore your soul, immerse yourself in unspoiled scenery, and make lifelong memories.</div>
+                    <h1 class="text-success">How To Reach Sikkim</h1>
+                    <div>It is simpler than you may imagine going to the magnificent landscapes of Sikkim. Although Sikkim does not have its own airport or train station, there are still convenient choices to ensure a smooth trip. The closest airport, Bagdogra Airport, is in West Bengal and can be used to travel to Sikkim. It has regular flights to Sikkim and is well-connected to India's largest cities. To go to Sikkim, a 4-5 hour trip from the airport, you can take a shared taxi or hire a car.
+
+                        New Jalpaiguri, also in West Bengal, is the closest significant railway station for people who opt for trains to Sikkim. New Jalpaiguri has excellent connections to many Indian cities. You can take a shared or hired taxi from NJP to Sikkim, roughly a four to five-hour trip away. You can also opt for pre-booked Sikkim tour packages, including transportation from Bagdogra Airport or New Jalpaiguri train station, assuring a stress-free journey to this lovely region.</div>
+                    <h1>Sikkim Spedover</h1>
+                    <img src="sikkim_spendover.png" style="float:left; height:200px; width:200px;" />
+                    9Nights/10Days
+                    <br>
+                    56200RS
+                    <br>
+                    Dargelling(3N),Gangtok(1N),Lachung(1N),Gangtok(3N),Silliguri(1N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#demo">View Details</button>
+                         <div id="demo" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                3 Nights in Darjeeling at Cedar Inn or similar
+                                1 Night in Gangtok at Treenz hotels or similar
+                                1 Night in Lachung at Yashshree Lachung or similar
+                                3 Night in Gangtok at Treenz hotels or similar
+                                1 Night in Silliguri at Courtyard By Marriott or similar
+                                <h1>Sightsings</h1>
+                                <h5>Dargelling</h5>
+                                Tiger Hills
+                                Japanese Temple and Peace Pagoda Darjeeling
+                                Experience of the toy train ride at Darjeeling - Ghum
+                                Padmaja Naidu Himalayan Zoological Park
+                                Visit the Himalayan Mountaineering Institute
+                                Tenzing & Gombu Rock
+                                Tibetan Refugee Self-Help Center
+                                Take a ride on the ropeway
+                                Panaromic View Of Tea Estate
+                                <h5>Gangtok</h5>
+                                Tshangu Lake - The glacial lake of Sikkim
+                                Baba Mandir
+                                Nathula Pass (At Optional)
+                                Bheem Nala Water Fall
+                                Gangtok ropeway ( Optional )
+                                Jhakri Water Fall
+                                Research institute of tibetology
+                                Directorate of handicraft & handloom
+                                Flower Exhibition Center - Ridge Park
+                                <h5>Lachung</h5>
+                                Yumthang Valley ( valley of flowers )
+                                Explore the Shingba Rhododendron Sanctuary
+                                <h5>Pelling</h5>
+                                Visit Pemayangtse Monastery
+                                Chenrezig Statue & Skywalk
+                                Rimbi Water falls
+                                Khecheopalri Lake
+                                Kanchenjunga Falls
+                                <h1>Meals</h1>
+                                9-Breakfast
+                                9-Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d1">
+                    <h1 class="text-success">About Kashmir</h1>
+                    <img src="kashmir.png" style="float:right; height:100px; width:100px;" />
+                    <div>Kashmir is known as heaven on planet Earth. It is one of India's best hill stations, with its snow-capped mountains, scenic splendor, exquisite monuments, abundant wildlife, local handicrafts, and smiling locals. A trip to Kashmir is on every traveler's bucket list, with superb vistas that stretch as far as the eye can see. The growing popularity of Kashmir tourism illustrates this.
+
+                        Immerse yourself in the peaceful and serene Kashmir and get enchanted by its natural beauty. Kashmir tour packages give you a chance to witness the massive glaciers, beautiful mountain peaks, rivers, glittering lakes, tall pine trees, and forests. 
+                        
+                        A few must-explore things in Kashmir; to experience the local culture, taste the local cuisines, and get captivated by mystical tales of the Kashmir Valley. Do not miss spending at least a night or two in a houseboat – an experience - renowned as synonymous with Kashmir.
+                         
+                        Kashmir vacation also entails adventure activities like paragliding in Sonmarg, skiing in the glaciers of Pahalgam and Gulmarg, and mountain biking on the slopes. Take in the beautiful scenery if adventure is not your thing. Do not miss exploring the history and culture of Kashmir.</div>
+                    <h1 class="text-success">How To Reach Kashmir</h1>
+                    <div>Air travel to Jammu and Kashmir is one of the shortest and easiest routes to visit the state. Check the best deals for flights to Kashmir on our portal. There are two airports in this state – one at Srinagar – Sheikh Ul-Alam International Airport and Jammu Airport – that operate only domestic flights. If you are considering trains for Kashmir – train travel is also a unique experience. For this, take a train to Jammu Tawi Railway Station. Kashmir Railways is well-connected with several metro cities.</div>
+                    <h1>Whole Of Jammu And Kashmir</h1>
+                    <img src="wholeofjk.png" style="float:left; height:200px; width:200px;" />
+                        9Nights/10Days
+                    <br>
+                        50650Rs
+                    <br>
+                    Katra(2N),Patnitop(1N),Pahalgam(2N),Gulmarg(1N),Srinagar(1N),Srinagar (2N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#h2">View Details</button>
+                         <div id="h2" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                2 Nights in Katra at Best Western Swing High Katra or similar
+                                1 Night in Patnitop at Hotel Samson or similar
+                                2 Nights in Pahalgam at Pine Spring Hotel/ Hotel Mount View pahalgam/ Hotel Hill Top or similar
+                                1 Night in Gulmarg at Hotel Pine Spring Gulmarg or similar
+                                1 Night in Srinagar at Dastan Premium Houseboat or similar
+                                2 Nights in Srinagar at The Grand Kaisar/ Hotel Palm Spring/ Hotel OV or similar
+                                <h1>Sightsings</h1>
+                                <h5>Katra</h5>
+                                Katra City Tour
+                                Mata Vaishnodevi Temple
+                                <h5>Patnitop</h5>
+                                Patnitop City Tour
+                                Nag Temple
+                                Padora Enclave & Patnitop park
+                                <h5>Pahelgam</h5>
+                                Pahalgam City
+                                Aru Valley / chandanwari (Car included)
+                                Pampore (Famous for Saffron Felid)
+                                <h5>Gulmarg</h5>
+                                Gulmarg City
+                                <h5>Srinagar</h5>
+                                Srinagar City
+                                Enjoy a Shikara Ride on Dal Lake
+                                Sonmarg City
+                                Shalimar Bagh Mughal Garden
+                                Hazratbal Shrine Mosque
+                                Chashma Shahi Garden
+                                Nishat Bagh
+                                <h1>Meals</h1>
+                                9-Breakfast
+                                9-Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d3">
+                    <h1 class="text-success">About Kerala</h1>
+                    <img src="kerala.png" style="float:right; height:100px; width:100px;" />
+                    <div>Kerala is one of the most sought after destinations in South India. Often referred to as God’s own country, this Indian state is full of picturesque locations, scenic beauty, rich cultural heritage, sun-kissed beaches, wildlife sanctuaries, plantations, and loads of attractions for every individual. Kerala is superb in many ways because despite having so much to offer it remains humble which reflects its alluring beauty. You can go there to rejuvenate or you can go there with an itinerary filled with things to do. Kerala offers just about every enchanting experience you can imagine. 
+
+                        Why book with a travel agency like Flamingo Transworld when planning your vacation to Kerala? There are numerous benefits. You won’t have to stress about the whole planning part which can take a toll on you and rob you of precious time that you can do other things in. You will be able to see more in less time because the experts plan your trip in such a way that you can get maximum benefits. You will be prepared if anything unexpected were to happen. You may be interested in some parts and our experts can help you choose the right Kerala tour packages so you can enjoy it to the fullest.
+                        
+                        A travel agency takes the guesswork out of planning your Kerala trip and it can be one of the most stress-free things. All you want to know about is what you want to experience when you go to the heavenly Kerala and let the agents help you decide. If you are not sure about what activities would be best then our experienced agents will help recommend places to visit and things you can do when in Kerala. A Kerala tour can be mesmerizingly awesome when planned right. Which package is best for you? There are several packages to choose from at Flamingo Transworld; Kerala packages for families and there is a Kerala honeymoon packages.</div>
+                    <h1 class="text-success">How To Reach Kerala</h1>
+                    <pre>
+                        Tourists all over the globe and India come to Kerala for its awe-inspiring beauty. There are many ways Indian tourists can reach Kerala; by air, by train, by road, and by bus. 
+                        By Air
+                        There are many Kerala tour packages from Ahmedabad, Mumbai, Bangalore, Kolkata, and Delhi which is why there are multiple travelling options for Kerala. There are four airports in Kerala; Cochin International Airport, Kannur International Airport, Trivandrum International Airport, and Calicut International Airport. Major metros in India have direct flights to Kerala and connecting flights too. The following are some of the airlines from major cities that fly to Kerala. 
+                        By Rail
+                        You can reach Kerala from other Indian cities via train too. There are 10 trains from Delhi to Kerala, 20 trains from Mumbai to Kerala, 10 trains from Bangalore to Kerala, 12 trains from Chennai to Kerala, and 4 trains from Kolkata to Kerala. The following are the fastest trains from major cities and the duration of the train.
+                        By Bus
+                        There is no direct connectivity via bus from Delhi, Mumbai, and Kolkata. When you are travelling from these cities you need to take either a flight or a train to a destination in Kerala. Then you can take State transport buses to reach your destination. Bangalore and Chennai have a direct bus service that takes 9 hours and 10 hours respectively.
+                        
+                        The fastest way to travel to Kerala is by air but it depends on your destination and which city you are travelling from. Kerala being a well-connected destination, you have many options and instead of taking only one type of transportation, you can opt for a combination. You can take a flight to a major airport in Kerala and then take a bus, taxi, or train to reach a particular destination.
+                    </pre>
+                    <h1>Veniece Of Kerala</h1>
+                    <img src="Marine-Drive.png" style="float:left; height:200px; width:200px;" />
+                    9Nights/10Days
+                    <br>
+                    42120Rs
+                    <br>
+                    Cochin(1N),Munnar(2N),Thekkady(2N),Kumarakom(2N),Kovalam(2N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#d">View Details</button>
+                         <div id="d" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                1 Night in Cochin at The Dunes Cochin/ The Dunes Continental or similar
+                                2 Nights in Munnar at Misty Mountain Resort/ Elysium Gardens Hill Resorts or similar
+                                2 Nights in Thekkady at Holiday Vista/ Abad Green Forest/ Hotel PepperVine or similar
+                                2 Nights in Kumarakom / Allepppy at The World Backwaters/ Abad Whispering Palms or similar
+                                2 Nights in Kovalam at Soma Palmshore/ Abad Harmonia Ayurveda Beach Resort or similar
+                                <h1>Sightsings</h1>
+                                <h5>Cochin</h5>
+                                Mattancherry Palace
+                                Chinese Fishing Nets
+                                Jewish Synagogue
+                                Museum of Kerala History
+                                <h5>Munnar</h5>
+                                Mattupetty Dam
+                                Blossom Park
+                                Kundala Lake
+                                Tea Gardens & Museums
+                                Echo Point
+                                Rajamalai (Eravikulam) National Park
+                                <h5>Thekkady</h5>
+                                Go for Periyar Boat Jungle Safari
+                                Spice Plantation
+                                Enjoy The Martial Art & Cultural Show
+                                Enjoy Kathakali Dance Show
+                                <h5>Kumarakom</h5>
+                                Half N Hour Sunset cruise on Vembanad Lake
+                                Kumarakom Bird Sanctuary
+                                <h5>Kovalam</h5>
+                                Hawa Beach
+                                <h1>Meals</h1>
+                                9-Breakfast
+                                9-Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d4">
+                    <h1 class="text-success">About Andaman</h1>
+                    <img src="Destination-Andaman.png" style="float:right; height:100px; width:100px;" />
+                    <div>Andaman is an ecological paradise loved by travelers from all over the world. The Andaman Islands comprise 572 islands out of which only 37 are inhabited. The islands are located in the Bay of Bengal and are popular for their serene beaches, rich marine life, and crystal-clear waters. Andaman Tour Package is a great holiday option, especially for travelers who love exploring natural beauty and water sports activities. Some of the must-explore things in Andaman include drop-dead gorgeous beaches, amazing wildlife sanctuaries, national parks, museums, mangrove forests, and much more. If you are fond of thrilling activities then you must travel to Andaman and try water sports activities like snorkeling, scuba diving, sea-walking, parasailing, kayaking, and more. Don’t miss out on the rich history and culture of Andaman flaunting various historical sites and museums. If you are a foodie, you must try delicious local seafood and other unique local delicacies. Andaman tourism promises an incredible holiday with a blend of adrenaline, relaxation, and cultural encounters. </div>
+                    <h1 class="text-success">How To Reach Andaman</h1>
+                    <pre>The Andaman Islands can be reached by air or sea. 
+                        By air: Flights to Andaman are easily available online. The capital city Port Blair has an air terminal named the Veer Savarkar International Airport which is very much associated with significant cities in India. Various carriers offer trips to Andaman including Air India, IndiGo, SpiceJet, Vistara, and GoAir.
+                        By sea: The Andaman Islands can also be reached by sea. Regular passenger ships are operated by the Shipping Corporation of India between the Indian mainland and Port Blair. The journey by sea takes approximately 50-60 hours and the ships to Andaman usually depart from Chennai, Kolkata, and Visakhapatnam. However, this mode of transportation is not very popular due to the long travel time and unpredictable weather conditions. When you arrive at Port Blair, you can explore different islands in Andaman by taking ships and boats that work between various islands.</pre>
+                    <h1>Andaman Honeymoon</h1>
+                    <img src="ah.png" style="float:left; height:200px; width:200px;" />
+                    8Nights/9Days
+                    <br>
+                    83900Rs
+                    <br>
+                    Port Blair(1N),HavelockIsland(2N),NeilIsland(2N),PortBlair(3N) 
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#demo">View Details</button>
+                         <div id="demo" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                1 Night in Port Blair at Symphony Samudra Beachside Jungle Resort And Spa, Port Blair or similar
+                                2 Nights in Havelock Island at Symphony Palms Beach Resort or similar
+                                2 Night(s) in Neil Island at Symphony Samudra Beach Resort And Spa or similar
+                                3 Nights in Port Blair at Symphony Samudra Beachside Jungle Resort And Spa, Port Blair or similar
+                                <h1>Sightsings</h1>
+                                <h5>Port Blair</h5>
+                                Corbyn's Cove Beach
+                                Cellular Jail
+                                The Light & Sound Show at cellular Jail
+                                Ross Island
+                                City Tour of Port Blair
+                                <h5>Havelock Island</h5>
+                                Radhanagar Beach
+                                Elephant Beach
+                                Kala Pathar Beach
+                                <h5>Neil Island</h5>
+                                Laxmanpur Beach
+                                Bharat Pur Beach
+                                <h1>Meals</h1>
+                                8-Breakfast
+                                8-Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d5">
+                    <h1 class="text-success">About Srilanka</h1>
+                    <img src="sri-lanka.png" style="float:right; height:100px; width:100px;" />
+                    <div>Sri Lanka is an island of serendipity and it is filled with romantic landscapes, mesmerising mountains, endless beaches, timeless ruins, welcoming people, fun trails, famous tea and flavorful food which makes it flawless in its own ways. The country boasts some of beautiful spots with natural, historic and cultural surprises. It is also well known for elephant safari with elephants playing a vital role in Sri Lankan culture. It is also famously known as the “Pearl of the Indian Ocean”. The island is rich in flora and fauna. From amazing beaches to flawless mountains, it has it all. So, if beaches are not your vibe, then head for the hills. Flamingo Transworld provides a variety of tour packages from family tours to escorted Sri Lanka tour packages to group tours to Sri Lanka. Sri Lanka packages offer everything from shopping options to nightlife to endless fun activities.
+
+                        Flamingo Transworld provides travelers with a wide range of hotels, resorts, villas, restaurants, and world class activities. Shopping in Sri Lanka is nothing short of sheer delight, and anyone who has visited this gorgeous island nation would surely agree. From beautiful crafted jewellery to batiks and more there’s a lot to take home at prices you would happily pay. Flamingo Transworld offers a diverse set of Sri Lanka holiday packages for you to select from. You can also check our Sri Lanka hotels on Flamingo’s Hotel Portal which offers a wide range of options for you to select from.
+                        </div>
+                    <h1 class="text-success">How To Reach Srilanka</h1>
+                    <pre>Travelling to Sri Lanka by Air
+                        The easiest way to get to Sri Lanka is by boarding a flight from India and reaching there on the same day of your departure. Sri Lanka has an air terminal bustling with travelers and it is known as the Bandaranaike Internal Airport. Situated in Colombo, Sri Lankan flights from the significant nations of the world land here. There are flights from India, Europe, Asia, Middle-East and Australia to Sri Lanka. However, as congestion increased, there was a need to tackle the increased air traffic and provide better immigration to tourists.
+                        
+                        The flights that operate from India to Sri Lanka are Air India, Jet Airways, Sri Lankan Airlines, Spice Jet and Vistara.  Flight duration from India to Sri Lanka may vary from 90 minutes to 3 hours 30 minutes depending on the airport.
+                        
+                        Travelling to Sri Lanka by Sea
+                        Previously, ferry services used to operate from Chennai to Colombo that carried tourists from one country to the other at economic rates.  The 7-day cruise departs at Mumbai and reaches Colombo, taking you to all the major destinations like Kandy and Nuwara Eliya along the way. The rates usually depend on the luxury class you intend to travel in and also feature a few adventure and water sports during the course of the cruise.
+                        
+                        Travelling to Sri Lanka by Road
+                        By Bus
+                        Buses connect Colombo with the airport as well as the different destinations in Sri Lanka. Sri Lanka operates a wide system of buses throughout Sri Lanka, and the Central Bus Stand in Colombo serves as the pivotal point for all buses operating in and out of Colombo.</pre>
+                    <h1>Historical Srilanka</h1>
+                    <img src="Sigiriya20Fortress.png" style="float:left; height:200px; width:200px;" />
+                    10Nights/11Days
+                    <br>
+                    67500Rs
+                    <br>
+                    Colombo(2N),Dambulla(2N),Kandy(1N),Nuwara Eliya(2N),Bentota(2N),Colombo (1N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de1">View Details</button>
+                         <div id="de1" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1>
+                                2 Nights in Colombo at Berjaya Hotel Colombo or similar 
+                                2 Nights in Dambulla at Kaveri Ayurveda Resort or similar
+                                1 Night in Kandy at Devon Hotel or similar
+                                2 Nights in Nuwara Eliya at Oak-Ray Summer Hill Breeze Hotel or similar
+                                2 Nights in Bentota at Rockside Beach Resort or similar
+                                1 Night in Colombo at Berjaya Hotel Colombo or similar
+                                <h1>Sightsings</h1>
+                                <h5>Dambulla</h5>
+                                Dambulla Cave Temple
+                                Sigiriya Rock Fortress
+                                <h5>Kandy</h5>
+                                Pinnawala Elephant Orphanage
+                                Royal Botanical Garden and Opanima Gems & Jwellery
+                                <h5>Nuwara Eliya</h5>
+                                Tea Garden & Plantation
+                                Sita Amman Temple
+                                Gregory Lake
+                                The Victoria Park
+                                <h5>Bentota</h5>
+                                Turtle hatchery bentota
+                                <h5>Colombo</h5>
+                                Colombo City Tour
+                                <h1>Meals</h1>
+                                10-Breakfast
+                                10-Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d6">
+                    <h1 class="text-success">About Thailand</h1>
+                    <img src="thailand.png" style="float:right; height:100px; width:100px;" />
+                    <div>Travel to Thailand with Flamingo Travels, your trusted partner in creating dream vacations. Thailand – a classic blend of vibrant cities, rich cultural heritage, awesome beaches, delicious food, and stunning landscapes, invites tourists to explore its marvels. 
+
+                        Our meticulously created Thailand holiday packages include expert guides, personalized itineraries, group and individual tours, comfortable accommodations, and unique experiences. We offer seamless Thailand tour packages from multiple cities to create unforgettable experiences. You can opt for Thailand tour packages from Mumbai, Thailand tour packages from Ahmedabad, Thailand tour packages from Pune, and Thailand tour packages from Bangalore. Choose the package option based on your location and preferences. 
+                        
+                        From the serene beaches of Phuket to the bustling streets of Bangkok, Thailand Tourism offers a diverse range of experiences. With our Thailand tour packages, explore the ancient temples in Bangkok, swim in the beautiful waters of Koh Samui, or unwind on the beaches of Krabi. Our expertly curated packages ensure a hassle-free holiday competitive price to this tropical paradise. We cover some of the most vibrant cities of Thailand like Bangkok, Krabi, Phuket, Koh Samui, and more. Discover the magic of Thailand with Flamingo Travels and allow your travel dreams to come true</div>
+                    <h1 class="text-success">How To Reach Thailand</h1>
+                    <div>Despite being on the same continent as Asia, Thailand is quite far from India. Therefore, the most practical way to reach Thailand is by air. Most Indian cities have direct flights to Bangkok, the nation's capital. Depending on the airline of choice, there are also flights from India to Thailand that pass through one or two transit hubs. Apart from the airport in the capital city - Suvarnabhumi Airport, you can also opt for Phuket International Airport or Chiang Mai International Airport. Pick the best option for you and book a Thailand flight ticket with Flamingo Travels at the best Prices. </div>
+                    <h1>Discovery Thailand</h1>
+                    <img src="Phi_Phi_Island_Tour.png" style="float:left; height:200px; width:200px;" />
+                    8Nights/9Days
+                    <br>
+                    100670Rs
+                    <br>
+                    Phuket(3N),Krabi(2N),Bangkok(3N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#demo">View Details</button>
+                         <div id="demo" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                3 Nights in Phuket at Deevana Plaza Phuket Patong /Ramada by Wyndham Phuket Deevana Patong /The Charm Resort Phuket or similar
+                                2 Nights in Krabi at Krabi Resort /Centra by Centara Phu Pano Resort Krabi /Holiday Inn Resort Krabi Ao Nang Beach, an IHG Hotel or similar
+                                3 Nights in Bangkok at Mercure Bangkok Makkasan /Avani Atrium Bangkok (Grand Mercure) /The Berkeley Hotel Pratunam or similar
+                                <h1>Sightsings</h1>
+                                <h5>Phuket</h5>
+                                Phuket City Tour
+                                Phi Phi Island Tour By Big Boat
+                                Rafitng + Zipline + Waterfall with local lunch
+                                <h5>Krabi</h5>
+                                4 Island Tour with Lunch by Speed Boat
+                                <h5>Bangkok<h5>
+                                Bangkok city tour ( Golden Buddha )
+                                Safari World with Marine Park with Lunch
+                                Chaophraya Dinner Cruise
+                                <h1>Meals</h1>
+                                8-Breakfast
+                                6-Lunch
+                                3-Local Lunch
+                                8-Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d7">
+                    <h1 class="text-success">About Singapore</h1>
+                    <img src="singapore.png" style="float:right; height:100px; width:100px;" />
+                    <div>Singapore, a dynamic city-state, is one of the smallest countries in Asia, yet it packs a lot in it. It attracts global visitors with its magical charm. This quintessential cosmopolitan city is one of the most visited cities in Asia. It is a destination that provides a wholesome experience to tourists. Whether you are looking for a family holiday, a honeymoon, or an adventure, Singapore Tourism has it all. 
+
+                        To explore this magical country, seek the best in trade – Flamingo Travels. With over twenty years of experience, we are renowned for our range of Singapore tour packages. We blend our passion for travel with our expertise in trade. Flamingo Travels creates tour plans that match your dreams. We are famous for our Singapore group tour packages as well as for Singapore honeymoon packages. With our meticulous planning, we provide the best Singapore trip cost in the market. Our packages feature the best hotel stays, transportation, and sightseeing. Serving Indian food on group tours is one of our highlights. From the serene Gardens by the Bay to the bustling markets of Little India, Flamingo Travels creates experiences that will stay with you for life. </div>
+                    <h1 class="text-success">How To Reach Singapore</h1>
+                    <div>Set off on your Singapore adventure with Flamingo Travels. The most common, easiest, and best way to travel to Singapore is by air. Book your flights from India to Singapore with us for a seamless travel experience. Many Indian cities have regular flights to the renowned Changi International Airport. It makes travel to and from India easy and convenient. Major airlines that connect India and Singapore are Air India, Singapore Airlines, Air India Express, Indigo, Cathay Pacific, and more. The journey takes approximately six to eight hours, depending on the airlines and stopovers. Book Singapore flight tickets with Flamingo Travels and get the best deal based on your preferences. Travel seamlessly from India to Singapore with our convenient Singapore Tour Package with airfare, ensuring hassle-free arrangements for your journey.</div>
+                    <h1>Experience Singapore</h1>
+                    <img src="Old-Supreme-Court.png" style="float:left; height:200px; width:200px;" />
+                    7Nights/8Days
+                    <br>
+                    86750Rs
+                    <br>
+                    Singapore(1N),Cruise(2N),Singapore(4N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#dem3">View Details</button>
+                         <div id="dem3" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                1 Night in Singapore at V Hotel Lavender/ ibis Styles Singapore On Macpherson/ Aqueen Heritage Hotel Little India or similar
+                                2 Nights in Cruise Siingapore to Siingapore or similar
+                                4 Nights in Singapore at V Hotel Lavender/ ibis Styles Singapore On Macpherson/ Aqueen Heritage Hotel Little India or similar
+                                <h1>Sightsings</h1>
+                                Gardens By the Bay (Flower Dome & Cloud Forest)
+                                Singapore City Tour
+                                Universal Studio
+                                Afternoon Sentosa Tour (IOS +MT +4D + Cable Car + WOT + Luge & Skyride)
+                                Marine Park S.E.A Aquarium
+                                <h1>Meals</h1>
+                                6-Breakfast
+                                2-Meals As Per Cruise Policy
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d8">
+                    <h1 class="text-success">About Bali</h1>
+                    <img src="bali.png" style="float:right; height:100px; width:100px;" />
+                    <div>Bali – the Island of Gods offers a classic mix of rich traditions, natural beauty, and warm hospitality. From scenic rice terraces and gorgeous beaches to bustling markets and intricately carved temples, Bali Tourism has something for all. A destination close to India is the most popular and preferred country by Indian tourists of all ages. Explore the artistic hub of Ubud and the glittering nightlife of Seminyak, or check out the breathtaking sunsets in Uluwatu. Immerse yourself in the beautiful and charming world of Bali with Flamingo Travels. 
+
+                        We make your travel planning much easier. Explore Bali with our Bali tour packages from Ahmedabad to enjoy a relaxing and stress-free travel experience. We have been in the trade for over two decades and are renowned for our quality and excellent customer service. Based on our trade expertise, we get to the core of offering the optimum travel experience to our clients. We offer group and customized Bali tour packages. We also offer numerous tour packages with unique itineraries of Bali. Our Bali tour packages from Mumbai are popular with more direct flying options available. Do not worry about your Bali trip cost when you travel with us.</div>
+                    <h1 class="text-success">How To Reach Bali</h1>
+                    <div>The ideal and practical way to travel to Bali from India is by air. So, opting for Bali holiday packages including flights is the best choice.. Major Indian cities connect to Denpasar International Airport, also known as Ngurah Rai International Airport. It is the main airport in Bali. Famous Airlines like Air India, Malaysia Airlines, Air Asia, Thai Airways, Singapore Airlines, etc. fly between these Indian cities and Bali. There are hardly any non-stop flights from India to Bali thus the popular stopovers are at Singapore, Kuala Lumpur, and Bangkok. You will reach in approximately 9 to 10 hours. The ticket cost varies on your traveling dates, airlines, and tourist season. Be assured and book Bali flight tickets with Flamingo Travels for the most affordable rates.</div>
+                    <h1>Beautiful Bali (Ubud and Kuta)</h1>
+                    <img src="Ayung-river-water-rafting-4.png" style="float:left; height:200px; width:200px;" />
+                    6Nights/7Days
+                    <br>
+                    23590Rs
+                    <br>
+                    Ubud(2N),Kuta(4N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#dem5">View Details</button>
+                         <div id="dem5" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                2 Nights in Bali Island at Champlung Mas Hotel Ubud/ The Evitel Resort Ubud or similar
+                                4 Nights in Bali Island at Zia Hotel Kuta/ Quest Hotel Kuta / Favehotel Kuta - Kartika Plaza or simila
+                                <h1>Sightsings</h1>
+                                Tanah Lot Temple
+                                White Water Rafting At Ayung River
+                                Tanjung Benoa Beach Water Activites ( 1x Parasailing, Banana Ride & Jetski )
+                                Balinese Spa Treatment
+                                Candle Light Dinner
+                                Bali Swing
+                                <h1>Meals</h1>
+                                6-Breakfast
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d9">
+                    <h1 class="text-success">About Germany</h1>
+                    <img src="germany.png" style="float:right; height:100px; width:100px;" />
+                    <div>Germany is a popular tourist destination in Europe, known for its rich history, diverse culture, and stunning landscapes. Germany offers a plethora of must-explore things that will leave you mesmerized. Germany Tour Packages are a great way to explore the country's beauty without any hassle. These packages provide a well-planned itinerary that includes popular destinations, accommodations, transportation, and activities. If you are planning to travel to Germany from India, you will need a Germany Tourist Visa before your trip.</div>
+                    <h1 class="text-success">How To Reach Germany</h1>
+                    <div>To reach Germany from India, the most convenient mode of travel is by air. Several airlines operate direct flights from Delhi, Mumbai, and Bangalore, to Berlin, Frankfurt, and Munich.
+
+                        Traveling to Germany by Air
+                        Traveling to Germany by air is the most convenient and quickest way to reach the country from India. Several airlines operate direct flights from India to Germany. The flight time can range from 7 to 12 hours, depending on the airline and the destination city in Germany. The price of an India to Germany flight ticket varies depending on the airline, the time of booking, and the season. To get the best deal, it is important to buy tickets in advance and compare airline prices.
+                        </div>
+                    <h1>Germany Romantic Route</h1>
+                    <img src="Resized-3.png" style="float:left; height:200px; width:200px;" />
+                    8Nights/9Days
+                    <br>
+                    80910Rs
+                    <br>
+                    Heidelberg (2N), Wurzburg (1N), Rothenburg ob der Tauber (2N), Fussen (2N), Munich (1N) 
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de9">View Details</button>
+                         <div id="de9" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                2 Nights in Heidelberg at Meininger Hotel Heidelberg Hauptbahnhof or similar
+                                1 Night in Wurzburg at ibis Wuerzburg City or similar
+                                2 Nights in Rothenburg ob der Tauber at Akzent Hotel Schranne or similar
+                                2 Nights in Fussen at Best Western Plus Hotel Füssen or similar
+                                1 Night in Munich at Holiday Inn Munich City East or similar
+                                <h1>Sightsings</h1>
+                                Heidelberg, Germany
+                                Heidelberg Walking Tour Of The Old Town
+                                Wurzburg, Germany
+                                City tour through Wurzburg with the Bimmelbahn
+                                Fussen, Germany
+                                Skip the line entrance ticket to Neuschwanstein Castle
+                                Munich, Germany
+                                Hop on Hop off Bus Pass - 24 Hours
+                                <h1>Meals</h1>
+                                8-Breakfast
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d10">
+                    <h1 class="text-success">About France</h1>
+                    <img src="france.png" style="float:right; height:100px; width:100px;" />
+                    <div>France is a popular destination across the globe with countless reasons why so many tourists love visiting this country. If you are into pristine beaches, high-adrenaline sports, historical masterpieces, and fine dining, you will find it all in your trip to France from India. It is a gorgeous country with picturesque valleys, beautiful coastlines, world-class wines, and tons of history. France tourism serves a range of experiences and options – from strolling through the charming streets to exploring iconic landmarks like the Eiffel Tower. 
+                        While planning to travel to France from India based on your preferences and budgets, you will find numerous France tour packages on our website. You can customize your package with your choices. There are many must-explore things in France, such as the Louvre Museum, the French Riviera, etc. Tourists will need a France tourist visa to travel from India to France. Apply for the visa beforehand to have sufficient time for processing. </div>
+                    <h1 class="text-success">How To Reach France</h1>
+                    <div>There are a few ways how to reach France from India. You can opt for a non-stop flight from major Indian cities or a connecting flight via other European countries. On the other hand, you can also take a train from any major European country like London, Amsterdam, etc. 
+
+                        Traveling to France by Air
+                        There are many options for flights from India to France. Traveling by airways is by far the most feasible option for Indian tourists. Charles de Gaulle Airport in Paris is the most preferred airport. India to France flight price depends on several factors such as the dates, season, etc.</div>
+                    <h1>Spendid French Riviera</h1>
+                    <img src="Monaco-&-Monte-carlo-2.png" style="float:left; height:200px; width:200px;" />
+                    8Nights/9Days   
+                    <br>
+                    147640RS
+                    <br>
+                    Paris (3N), Chamonix (2N), Nice (3N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de10">View Details</button>
+                         <div id="de10" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                3 Nights in Paris at Apart hotel Adagio La Défense Esplanade or similar
+                                2 Nights in Chamonix at ibis Styles Les Houches Chamonix or similar
+                                3 Nights in Nice at Hotel ibis Nice Centre Gare or similar
+                                <h1>Sightsings</h1>
+                                Paris, France
+                                Cruise & Illumination Tour Of Paris
+                                Big Bus Hop on Hop Off Bus Pass - 1 Day Pass
+                                Disneyland Paris 1 Day 1 Park (Only Entrance)
+                                Chamonix, France
+                                Aiguille du Midi - Round-trip Chamonix
+                                Nice, France
+                                Nice Half Day City Tour
+                                <h1>Meals</h1>
+                                8-Breakfast
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d11">
+                    <h1 class="text-success">About Switzerlend</h1>
+                    <img src="switzerland.png" style="float:right; height:100px; width:100px;" />
+                    <div>The popularity of Switzerland began with Bollywood movies, but over the years, it has become the most desired among international travelers. Switzerland Tourism strives to serve the best to promote this European country. The things that come to your mind when you think of Switzerland are the Swiss Alps, lush greenery, pristine lakes, cheese, cowbells, glaciers, chocolates, watches, and so much more. All these things make Switzerland a definite on the travel bucket list of most tourists.
+
+                        Flamingo Travels offers the best Switzerland tour packages - that allow you to experience this magical wonderland. Switzerland is a country full of surprises whether you are an adrenaline addict or wish to experience the peace of nature. Opt for our Switzerland tour packages from Ahmedabad – you can pick a Switzerland group tour package or a customized tour package. Our travel experts will create a Switzerland itinerary based on your priorities, timeline, and budget. We offer comprehensive packages that include comfortable hotels, rail passes for unlimited train travel, sightseeing, and transfers. Some highlights of our tours are cruising Lake Lucerne, riding cable cars for stunning mountain views, exploring medieval towns like Lucerne and Bern, going on a Swiss chocolate factory tour, visiting Mount Titlis and Jungfraujoch, and sampling cheese and wine.
+                        
+                        We offer group tours with excellent inclusions like best stay options, Indian meals, all the must-see places, the company of like-minded people, and more. Our customized Switzerland tour packages consider all your preferences and create the best itinerary as per your choices. Our Switzerland tour packages from Mumbai and other major cities ensure an outstanding tour experience. </div>
+                    <h1 class="text-success">How To Reach Switzerland</h1>
+                    <div>The most convenient way to reach Switzerland from India is by airways. There are numerous flight options connecting between these two countries. Most flights flying to Switzerland from India have at least one stop. Popular airlines are Air India, Etihad, Air France, Lufthansa, Swiss Air and others. Depending on the airline you choose, the stopover can be in any European city like Paris, Milan, London, Dubai, Istanbul, etc. You can also opt for direct flights to Switzerland from Mumbai and New Delhi. The most popular airport is Zurich, which receives a majority of international flights. Other popular Swiss airports are Bern Airport, Basel Airport, and Geneva Airport. While planning to travel to Switzerland – get in touch with our flight experts to create the best travel option for you.</div>
+                    <h1>Traimbaling Switzerland</h1>
+                    <img src="Saint_moritz.png" style="float:left; height:200px; width:200px;" />
+                    10Nights/11Days
+                    <br>
+                    173550
+                    <br>
+                    Saint Moritz (2N), Zermatt (2N), Bern (2N), Stoos (2N), Zurich (2N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#demo">View Details</button>
+                         <div id="demo" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                2 Nights in Saint Moritz at Hotel Piz or similar
+                                2 Nights in Zermatt at Hotel Bristol or similar
+                                2 Nights in Bern at Best Western Hotel Bern or similar
+                                2 Nights in Stoos at Stoos Lodge or similar
+                                2 Nights in Zurich at Holiday Inn Express Zurich Airport or similar
+                                <h1>Sightsings</h1>
+                                Saint Moritz, Switzerland
+                                Piz Nair
+                                Zermatt, Switzerland
+                                Sunnegga Mountain With Swiss Rail Pass
+                                5 Lake hiking Tours
+                                Schwyz, Switzerland
+                                Excursion to Mt Stoos With Swiss Rail Pass
+                                Zurich, Switzerland
+                                Visit Uetilberg
+                                Bern, Switzerland
+                                Hike from Kandersteg to Lake Oeschinensee
+                                Stoos, Switzerland
+                                Ridge Hiking Trail
+                                <h1>Meals</h1>
+                                10-Breakfast
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d12">
+                    <h1 class="text-success">Austriya</h1>
+                    <img src="austria.png" style="float:right; height:100px; width:100px;" />
+                    <div>Austria holiday packages – Book your Austria packages with Flamingo.  One of the most popular holiday destinations of Europe, Austria is widely famous for rich history, beautiful places, traditions and activities. Austria tour packages offers places to visit both in summer and winter.
+
+                        Along with neighbouring Switzerland, it is the winter sports capital of Europe. In summer tourists visit its historic cities and villages and hike in magnificent scenery in The Alps. Major attractions on Austria tour are Vienna Hofburg, Innsbruck, Salzburg, Kitzbuheler Horn and more.</div>
+                    <h1 class="text-success">How To Reach Austriya</h1>
+                    <div>Flamingo Transworld offers you Austria tour packages from Ahmedabad, Mumbai, Delhi, Jaipur and other major cities of India. We try our best to serve our customers with utmost comfort through our communication and network of offices around the nation. Most of our team members have already been to the destination and that will surely add value to your holiday. Our strong suit is we serve vegetarian & Jain food on all our group tours. So hurry up, and plan your Austria holiday trip with us so that you can create fresh and warm memories to cherish, while we take care of the rest!</div>
+                    <h1>Spedid Austriya</h1>
+                    <img src="Salzburg-3.png" style="float:left; height:200px; width:200px;" />
+                    6Nights/7Days
+                    <br>
+                    74820Rs
+                    <br>
+                    Innsbruck (2N), Salzburg (2N), Vienna (2N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de12">View Details</button>
+                         <div id="de12" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                2 Nights in Innsbruck at Tivoli Hotel Innsbruck or similar
+                                2 Nights in Salzburg at Hotel am Mirabellplatz or similar
+                                2 Nights in Vienna at Austria Trend Hotel Ananas or similar
+                                <h1>Sightsings</h1>
+                                Innsbruck, Austria
+                                Entrance to Swarovski crystal
+                                Salzburg, Austria
+                                Original Sound Of Music Tours
+                                Vienna, Austria
+                                Half-Day Vienna City Tour with Entrance to Schonbrunn Palace
+                                <h1>Meals</h1>
+                                6-Breakfast
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d13">
+                    <h1 class="text-success">About Australiya</h1>
+                    <img src="australia.png" style="float:right; height:100px; width:100px;" />
+                    <div>A land of striking difference, Australia attracts tourists with its incredible natural beauty, diverse cultural tapestry, and vibrant cosmopolitan cities. From cascading waterfalls to pristine beaches, the rugged Outback to the Great Barrier Reef, Australian Tourism offers unique wildlife spotting options and awe-inspiring landscapes.
+
+                        This country is an entire continent, and to explore this land, you will need proper planning and implementation. Seek the best travel partner in the market – Flamingo Travels. We have been serving travel enthusiasts for more than two decades. We are renowned in the market for our Australia tour packages from Ahmedabad. Our Australia tour packages are designed considering many aspects of exploring this country-continent. We curate our group tour packages covering many important locations across Australia.
+                        
+                        Along with our group tours, we also help create personalized Australia tour packages based on your choices, budget, and preferences to experience the diverse wonders of Australia. Whether you wish for a family vacation or a honeymoon, we create the ideal Australia tour package. Flamingo Travels covers all aspects of your travel with the best Australia tour costs. We take care of all the tour planning and logistics to offer a seamless travel experience. Book your Australia tour packages from Mumbai with us to get some great deals.</div>
+                    <h1 class="text-success">How To Reach Australiya</h1>
+                    <div>Traveling to Australia in the other part of the world means you will need an Australia tour package with flight options. We offer group and customized Australia tour packages with return international air tickets from major Indian cities. You can opt for popular airlines like Singapore Airlines, Qantas, Etihad, and Cathay Pacific. They operate numerous flight options to cities like Perth, Sydney, Brisbane, and Melbourne. Most of these flights are connecting flights with stopovers at popular airports en route. Air India flies non-stop from New Delhi to Sydney. It covers this distance in around 12 hours and 25 minutes. For a stress-free holiday, book your Australia flight tickets with Flamingo Travels. Our flight experts will offer the best flight options matching your budget, travel dates, and other preferences.</div>
+                    <h1>Amazing Australiya</h1>
+                    <img src="opera-house.png" style="float:left; height:200px; width:200px;" />
+                    11Nights/12Days
+                    <br>
+                    432870Rs    
+                    <br>
+                    Cairns (3N), Gold Coast (3N), Sydney (3N), Melbourne (2N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de13">View Details</button>
+                         <div id="de13" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                3 Nights in Cairns at Pacific Hotel Cairns /Rydges Esplanade Resort Cairns /Novotel Cairns Oasis Resort /DoubleTree by Hilton Cairns /Holiday Inn Cairns Harbourside or similar
+                                3 Nights in Gold Coast at voco Gold Coast /Mantra Legends Hotel /Mantra on View Hotel /Novotel Surfers Paradise or similar
+                                3 Nights in Sydney at Vibe Hotel Sydney / Holiday Inn on Darling Harbour /Novotel Sydney Central /Mercure Sydney /Rendezvous Hotel Sydney Central /Holiday Inn Sydney - Potts Point, an IHG Hotel or similar
+                                2 Nights in Melbourne at Oaks on Market /Amora Riverwalk Melbourne /Pegasus Apart Hotel /Rydges Melbourne /Courtyard by Marriott Melbourne Flagstaff Gardens /Rendezvous Hotel Melbourne or similar
+                                <h1>Sightsings</h1>
+                                Cairns, Australia
+                                Half day Kuranda Village tour with one way skyrail
+                                Big Cat Green Island Cruise with Semi-Submarine and Glass bottom boat
+                                Gold Coast, Australia
+                                Jet Boating Gold Coast
+                                Movieworld admission only
+                                Dreamworld admission Only
+                                Sky Point Observation Deck
+                                Sydney, Australia
+                                Sydney City Orientation Tour
+                                Bondi Beach Tour
+                                Madame Tussauds Sydney
+                                SEA LIFE Sydney Aquarium
+                                Opera House Guided Tour
+                                Sydney Harbour Cruise
+                                Sydney Tower Eye
+                                Blue Mountain With Scenic World
+                                Featherdale Wildlife Park
+                                Melbourne, Australia
+                                City Tour of Melbourne
+                                Guide tour of MCG Ground
+                                Full Day Great Ocean Road
+                                Great Ocean Road Helicopter Tours
+                                <h1>Meals</h1>
+                                11-Indian Breakfast / Breakfast / Packed Breakfast
+                                10-Lunch/Packed Lunch/ Continental Lunch
+                                11-Dinner/Continental Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d14">
+                    <h1 class="text-success">About NewZelend</h1>
+                    <img src="new-zealand.png" style="float:right; height:100px; width:100px;" />
+                    <div>New Zealand, the youngest country in the world, has it all, from rich culture to untamed wilderness. Discover this magical land of unique places, people, and experiences. Rich in Maori culture, this island country features a diverse mix of attractions. New Zealand is divided into two islands, North Island and South Island. It is known as the last area to be lived in by humans.
+
+                        We offer comprehensive New Zealand tour packages from Ahmedabad. Our knowledgeable travel experts will help create an ideal New Zealand itinerary based on your interests, budget, and timeframe. Explore the lush greenery and pristine lakes while keeping your New Zealand trip cost within reach. Discover Maori culture, cruise the stunning Milford Sound, hike through national parks, try adventure activities like bungee jumping and zorbing, and do not miss the vibe of bustling cities. Our New Zealand tour packages from Mumbai, also offer great value while ensuring you have an outstanding Kiwi holiday. 
+                        
+                        With decades of travel expertise, Flamingo Travels, your trusted travel companion, brings you the perfect New Zealand vacation. Discover the heart of New Zealand Tourism with us to create lifelong memories.</div>
+                    <h1 class="text-success">How To Reach New-Zelend</h1>
+                    <div>Book your New Zealand tour packages with flights. Flying is the most suitable option to reach this island country. Airlines from India to New Zealand depart from major Indian cities. Most international flights arrive in Auckland. From Auckland –many local flights connect with other domestic airports in New Zealand. Other international airports in New Zealand are Christchurch, Wellington, and Queenstown. Depending on the flight route, Singapore, Kuala Lumpur, Bangkok, or Hong Kong are common stopover cities for flights from India to New Zealand. Book New Zealand flight tickets with Flamingo Travels to get the best deal based on your preferences.</div>
+                    <h1>Naturally New-Zelend</h1>
+                    <img src="auckland-city-image.png" style="float:left; height:200px; width:200px;" />
+                    14Nights/15Days
+                    <br>
+                    662690Rs
+                    <br>
+                    Auckland (2N), Rotorua (2N), Lake Taupo (1N), Wellington (1N), Christchurch (1N), Franz Josef (2N), Queenstown (3N), Lake Tekapo (1N), Christchurch (1N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de14">View Details</button>
+                         <div id="de14" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                2 Nights in Auckland at Sudima Auckland Airport/ Auckland City Hotel/ ibis Budget Auckland Central or similar
+                                2 Nights in Rotorua at Sudima Hotel Lake Rotorua/ Distinction Hotel Rotorua/ Ibis Rotorua or similar
+                                1 Night in Lake Taupo at Lakeland Resort Taupo or similar
+                                1 Night in Wellington at ibis Wellington/ Mercure Wellington Abel Tasman or similar
+                                1 Night in Christchurch at Ibis Christchurch/ Heartland Hotel Cotswold/ Sudima Hotel Christchurch Airport or similar
+                                2 Nights in Franz Josef at Heartland Hotel Fox Glacier/ Aspen Court Franz Josef/ Alpine Glacier Motel or similar
+                                3 Nights in Queenstown at Tanoa Aspen Hotel Queenstown/ Copthorne Hotel and Resort Queenstown Lakefront/ Heartland Hotel Queenstown or similar
+                                1 Night in Lake Tekapo at The Godley Hotel - Lake Tekapo or similar
+                                1 Night in Christchurch at Ibis Christchurch/ Heartland Hotel Cotswold/ Sudima Hotel Christchurch Airport or similar
+                                <h1>Sightsings</h1>
+                                Auckland, New Zealand
+                                Sky Tower in Auckland
+                                Rotorua, New Zealand
+                                OGO Rotorua
+                                Velocity Valley Adventure Park (Any Two) - Agro jet, Swoop, Shweeb or Freefall Xtreme
+                                Te Puia - Te Ra Day Pass Admission
+                                Polynesian Spa - Family Pools (Formerly known as Family Spa Public)
+                                Wellington, New Zealand
+                                WELLINGTON TO PICTON FERRY DEPARTS: 8:00 AM ARRIVES : 11:30 AM
+                                Christchurch, New Zealand
+                                International Antarctic Centre with Hagglund ride and 4D show
+                                Queenstown, New Zealand
+                                Full Day Milford Sound Cruise - Ex Queenstown
+                                Skyline Gondola And 1 Luge Ride
+                                Jet Boat Ride - 30 Minutes
+                                Lake Tekapo, New Zealand
+                                Stargazing Tour
+                                <h1>Meals</h1>
+                                14-Breakfast
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d15">
+                    <h1 class="text-success">About Mauraisious</h1>
+                    <img src="mauritius.png" style="float:right; height:100px; width:100px;" />
+                    <div>Mauritius has been named the Leading Adventure Tourism Destination of the Indian Ocean by the World Travel Awards. Serene beaches, turquoise lagoons, and lush rainforests await you on your trip to Mauritius. Set around two thousand kilometers away from Africa, in the Indian Ocean – Mauritius is one of the famous island nations that is on the travel bucket list of most Indian tourists. Mauritius, a picturesque island nation, is famous for its coral reefs and azure waters, and it provides a variety of water sports.
+
+                        Beyond its beaches, Mauritius holiday packages showcase its rich cultural diversity, evident in its colorful festivals and delicious cuisine. You can explore ancient sites like the Le Morne Brabant and delve into the colonial past of the island. With its tropical charm and warm hospitality, Mauritius Tourism promises an unforgettable holiday experience for all those seeking adventure, relaxation, and cultural immersion. Flamingo Travels offers a range of Mauritius tour packages from Ahmedabad for you to choose from. With beautiful volcanic landscapes, heavenly weather, and warm locals, Mauritius makes an easy tropical getaway for tourists wishing to soak in paradise. </div>
+                    <h1 class="text-success">How To Reach Mauraisious</h1>
+                    <div>The only option to go from India to Mauritius is by flight. India and Mauritius are well connected by air. Both direct and indirect links exist between the two nations. Traveling by air with our Mauritius tour packages with flight gives you a glimpse of this beautiful island from the top if you book a window seat. The main airport is Sir Seewoosagur Ramgoolam International Airport, around 48 km away from the capital of Mauritius. The flight duration is around six hours. However, this may differ based on your departure city. While there are direct flight options from Mumbai and Delhi, most options include a stopover of one or two. The direct flights are operated by Air Mauritius. Other carriers are Spicejet, Air India, Kenya Airways, Go Air, Indigo, Emirates, etc. To avail of the best deals, book Mauritius flight tickets with Flamingo Travels. 
+                    </div>
+                    <h1>Amazing Maurasiues</h1>
+                    <img src="Mauritius-North-Island-Tour.png" style="float:left; height:200px; width:200px;" />
+                    6Nights/7Days
+                    <br>
+                    85840Rs
+                    <br>
+                    Mauritius (6N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de15">View Details</button>
+                         <div id="de15" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                6 Night(s) in Mauritius at InterContinental Resort Mauritius, an IHG Hotel, Deluxe Ocean Facing Rooms or similar
+                                <h1>Sightsings</h1>
+                                Ill Aux Cerf tour with Speed Boat transfers
+                                Mauritius South Island Tour
+                                Mauritius North Island Tour
+                                <h1>Meals</h1>
+                                6-Breakfast
+                                6-Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d16">
+                    <h1 class="text-success">About South Africa</h1>
+                    <img src="south-africa.png" style="float:right; height:100px; width:100px;" />
+                    <div>The rainbow nation, South Africa, conjures images of wildlife; against the setting sun and baobab trees. This African country is much more beyond it which makes this diverse destination so outstanding. Each region has its unique personality, offering a magical fusion of enchanting wildlife, cosmopolitan cities, remote wilderness, and rich culture and history. From the wild-game viewing in Kruger National Park and the vibrant streets of Cape Town to the lush valleys of the vineyards, the diversity of this country is truly magical.
+
+                        Flamingo Travels, a renowned name in the industry, offers the best deals for South Africa tour packages from Ahmedabad. Our South Africa tour packages include all the not-to-be-missed places and experiences. South Africa tour packages from Mumbai are also one of the best options. The USP of the South Africa group tour packages by Flamingo Travels are with Indian meals and expert guides. We understand how we relish Indian cuisine while traveling internationally. Our knowledgeable guides offer their expertise and assistance throughout the tour. We also offer customized South Africa tour packages tailored to your needs. Our expert team ensures you have a hassle-free experience of South Africa&#39;s wonders. You won't have to stress about the South Africa tour cost with our help. With us, you will avail yourself of unmatched experiences at competitive prices.</div>
+                    <h1 class="text-success">How To Reach South Africa</h1>
+                    <div>Traveling to South Africa from India is effortless with Flamingo Travels. Book your South Africa tour package with a flight with us to avail the best deals in the market. You can fly to South Africa from various Indian cities via popular airlines like South Africa Airways, Qatar Airways, Emirates, Jet Airways, and many more. The renowned international airports are O. R. Tambo International Airport and Cape Town International Airport. Book South Africa flight tickets with Flamingo Travels, and leave all your worries aside. With multiple flights from major Indian cities, including Mumbai and Delhi, you can embark on your South Africa adventure comfortably. Trust Flamingo Travels, to handle your travel needs, guaranteeing a smooth and enjoyable trip to explore the wonders of South Africa.</div>
+                    <h1>Delightful South Africa</h1>
+                    <img src="Capetown-3.png" style="float:left; height:200px; width:200px;" />
+                    13Nights/14Days
+                    <br>
+                    180020Rs
+                    <br>
+                    Johannesburg (1N), Kruger National Park (2N), Johannesburg (1N), Sun City (2N), George (3N), Cape Town (4N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de16">View Details</button>
+                         <div id="de16" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                1 Night in Johannesburg at Peermont Metcourt Hotel or similar
+                                2 Nights in Kruger National Park at Hotel Numbi & Garden Suites or similar
+                                1 Night in Johannesburg at Peermont Metcourt Hotel or similar
+                                2 Nights in Sun City at The Cabanas Hotel at Sun City Resort or similar
+                                3 Nights in George at The Wilderness Hotel or similar
+                                4 Nights in Cape Town at Holiday Inn Express City Centre/ Sunsquare Cape Town Gardens or similar
+                                <h1>Sightsings</h1>
+                                Sun City, South Africa
+                                Valley of Waves Pool
+                                Kruger National Park, South Africa
+                                Full Day Game Drive
+                                Half Day Game Drive
+                                George, South Africa
+                                Cango Caves Entrance
+                                Ostrich Farm Entrance
+                                Tsitsikamma National Park with Suspension Bridge Walk
+                                Cape Town, South Africa
+                                Table Mountain Aerial Cableway
+                                Boulders Beach
+                                Seal Island Cruise
+                                Cape of Good Hope
+                                Flying Dutchman Funicular
+                                <h1>Meals</h1>
+                                13-Breakfast
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d17">
+                    <h1 class="text-success">About UAE-Dubai</h1>
+                    <img src="dubai.png" style="float:right; height:100px; width:100px;" />
+                    <div>Dubai – one of the most popular countries for Indian tourists, is a great place to go on vacation. Its desert adventures, lavish hotels, extravagant malls, and iconic skyscrapers create a unique charm. Flamingo Travels, your trusted travel partner, creates the best Dubai tour packages tailored to perfection. At Flamingo Travels – we are aware of the essence of a holiday in Dubai. From the splendor of Dubai Mall to the awe-inspiring Burj Khalifa, we create travel experiences that capture the grandeur of Dubai. Explore the bustling souks and exciting desert safaris, and have fun with many entertainment options in Dubai. No matter which city you are based in, our expert tour planners offer a hassle-free travel experience to Dubai. Our Dubai tour packages from Mumbai and other cities offer exclusive experiences like visits to the Dubai Creek and Palm Jumeirah.
+
+                        We take pride in offering a personalized approach to all our tours. Our Dubai packages from Ahmedabad ensure every detail, from flights, visas, stay, sightseeing, and experiences. If you like traveling in groups and Indian food, inclusive of a tour guide – then our group tours are ideal for you. But, if you wish to have customized tour inclusions, then our tours are the best fit. We offer the most competitive Dubai tour packages price from India. Experience Dubai with Flamingo Travels – where your dream becomes a reality.  
+                        </div>
+                    <h1 class="text-success">How To Reach UAE-Dubai</h1>
+                    <div>Your trip to Dubai begins with a hassle-free experience with our Dubai tour packages with flights. We offer tour packages that include all the essentials of traveling to Dubai. The most obvious way to reach Dubai from India is by air. We offer numerous flight options to Dubai International Airport and other airports in the UAE at affordable cost. Avail of direct flight connections from Indian cities to Dubai. Some popular airlines connecting both these countries are Emirates, Air India, Indigo, Spicejet, and more. Book Dubai flight tickets with Flamingo Travels to avail the best travel deals. </div>
+                    <h1>Discovery Dubai</h1>
+                    <img src="dcity.png" style="float:left; height:200px; width:200px;" />
+                    6Nights/7Days
+                    <br>
+                    89340Rs
+                    <br>
+                    Dubai (6N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de17">View Details</button>
+                         <div id="de17" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                6 Nights in Dubai at 4 Star or similar
+                                <h1>Sightsings</h1>
+                                Dubai, United Arab Emirates
+                                Dubai Frame
+                                Dubai Half Day City Tour with Oneway Monorail Ride
+                                Dubai Mall with Burj Khalifa 124th Floor (Non Prime Time) and Fountain Show
+                                Desert Safari with Dinner
+                                Marina Dhow Cruise with Dinner
+                                Miracle Garden with Global Village
+                                Abu Dhabi, United Arab Emirates
+                                Sheikh Zayed Grand Mosque
+                                Abu Dhabi City tour
+                                Visit Swaminarayan Temple at Abu Dhabi
+                                <h1>Meals</h1>
+                                6-Breakfast
+                                2-Lunch
+                                1-Brunch
+                                7-Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d18">
+                    <h1 class="text-success">About Oman Muscut</h1>
+                    <img src="oman.png" style="float:right; height:100px; width:100px;" />
+                    <div>Oman - Muscat Tour Packages - Book Oman - Muscat Vacation tours with Flamingo Transworld. Get the tailor made International Tour deals on Oman - Muscat Holidays which will make your vacation unforgettable.</div>
+                    <h1 class="text-success">How To Reach Oman Muscat</h1>
+                    <div>The quickest way to get from India to Oman by plane will take about 2h 45m and departs from Chhatrapati Shivaji International Airport (BOM) and arrives into Muscat International Airport (MCT). There are flights departing 2-4 times a day on this route.</div>
+                    <h1>The Soul Of Oman</h1>
+                    <img src="Bimmah-Sinkhole.png" style="float:left; height:200px; width:200px;" />
+                    6Nights/7Days
+                    <br>
+                    166670Rs
+                    <br>
+                    Muscat (2N), Wahiba (1N), Nizwa (2N), Muscat (1N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de18">View Details</button>
+                         <div id="de18" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                2 Nights in Muscat at Al Bustan Palace A Ritz Carlton Hotel/ Kempinski Hotel Muscat or similar
+                                1 Night in Wahiba at 1000 Nights Camp/ Desert Nights Camp / Desert Rose Camp Oman or similar
+                                2 Nights in Nizwa at Golden Tulip Nizwa/ Intercity Hotel Nizwa or similar
+                                1 Night in Muscat at Al Bustan Palace A Ritz Carlton Hotel/ Kempinski Hotel Muscat or similar
+                                <h1>Sightsings</h1>
+                                Wahiba, Oman
+                                Wadi Bani Khalid
+                                Wahiba Sands
+                                Muscat, Oman
+                                Bait Al Zubair Museum
+                                Al Mirani & Al Jalali Forts
+                                Mutrah Souq
+                                Muscat City Tour With Grand Mosque
+                                Bimmah Sinkhole
+                                Nizwa, Oman
+                                Nizwa souq
+                                Birkat Al Mauz
+                                <h1>Meals</h1>
+                                6-Breakfast
+                                4-Picnic Lunch
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d19">
+                    <h1 class="text-success">About Israel Jordan</h1>
+                    <img src="israel.png" style="float:right; height:100px; width:100px;" />
+                    <div>Jordan and Israel Tour Packages - Book your Jordan and Israel tours with Flamingo Transworld. Get the tailor made International Tour deals on Jordan and Israel Holidays which will make your vacation unforgettable.
+
+                        Jordan and Israel are fascinating destinations loaded with history, still being stable and peaceful even after the ongoing conflicts of neighboring places Syria and Israel. Jordan and Israel tour package are famous tourist attractions in Middle East, boasting unique natural wonders, untouched desert landscapes, archeological sites, beautiful beaches and variety if experiences. Major attractions of Jordan and Israel tour are Mt. Nebo, Wadi Rum, Petra, Allenby Bridge, roman city of Jerash and much more.</div>
+                    <h1 class="text-success">How To Reach Israel Jorden</h1>
+                    <div>Flamingo Transworld offers Jordan and Israel holiday packages from Ahmedabad, Mumbai, Delhi, Jaipur and other major cities of India. We try our best to serve our customers with utmost comfort through our communication and network of offices around the nation. Most of our team members have already been to the destination and that will surely add value to your holiday. Our strong suit is we serve vegetarian & Jain food on all our group tours. So hurry up, and plan your Jordan and Israel holiday trip with us so that you can create fresh and warm memories to cherish, while we take care of the rest!
+                    </div>
+                    <h1>Dreams Of Jordan</h1>
+                    <img src="Desert-Castle.png" style="float:left; height:200px; width:200px;" />
+                    6Nights/7Days
+                    <br>
+                    79420Rs
+                    <br>
+                    Amman (3N), Petra (1N), Wadi Rum (1N), Sweimeh Dead Sea (1N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de19">View Details</button>
+                         <div id="de19" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                3 Nights in Amman at Geneva Hotel Amman or similar
+                                1 Night in Petra at Petra Castle Hotel or similar
+                                1 Night in Wadi Rum at Rum Oasis Luxury camp or similar
+                                1 Night in Sweimeh Dead Sea at Grand East Resort & Spa or similar
+                                <h1>Sightsings</h1>
+                                Amman, Jordan
+                                Amman City Tour
+                                Desert Castle
+                                Ajloun, Jordan
+                                Ajloun Castle
+                                Madaba, Jordan
+                                Visit To Madaba
+                                Mount Nebo - Madaba
+                                Kerak Castle
+                                Petra, Jordan
+                                Petra
+                                Wadi Rum Petra
+                                Jerash, Jordan
+                                Visit Jerash Site & Dead Sea
+                                <h1>Meals</h1>
+                                6-Breakfast
+                                1-Dinner
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-pane" id="d20">
+                    <h1 class="text-success">About Baku</h1>
+                    <img src="baku-azerbaijan.png" style="float:right; height:100px; width:100px;" />
+                    <div>Azerbaijan Tour Packages - Book your Azerbaijan Vacation tours with Flamingo Transworld. Get the tailor made International Tour deals on Azerbaijan Holidays which will make your Alaska vacation unforgettable.
+
+                        The destination Azerbaijan is also known as the Land of Fire. Azerbaijan Packages has something for everyone. It is one of those unknown cities which is rapidly transforming into an attractive Eurasian destination. Baku which is the capital city of Azerbaijan is famous for UNESCO listed historic neighbourhood, contemporary architecture and more. Baku is major part of Azerbaijan tour packages. The destination is blessed with rich culture, delectable food, historic town, and plenty of adventure activities. Major attractions on Azerbaijan Holiday are Highland park, Flame Towers, Baku old city, Nizami street, Baku eye and more.</div>
+                    <h1 class="text-success">How To Reach Baku</h1>
+                    <div>Flamingo Transworld offers Azerbaijan holiday packages from Ahmedabad, Mumbai, Delhi, Jaipur and other major cities of India. We try our best to serve our customers with utmost comfort through our communication and network of offices around the nation. Most of our team members have already been to the destination and that will surely add value to your holiday. Our strong suit is we serve vegetarian & Jain food on all our group tours. So hurry up, and plan your Azerbaijan holiday trip with us so that you can create fresh and warm memories to cherish, while we take care of the rest!</div>
+                    <h1>Best Of Baku</h1>
+                    <img src="Baku_Boulevard.png" style="float:left; height:200px; width:200px;" />
+                    5Nights/6Days
+                    <br>
+                    35500Rs
+                    <br>
+                    Baku (5N)
+                    <br>
+                    <div class="container">
+                        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#de20">View Details</button>
+                         <div id="de20" class="collapse">
+                            <pre>
+                                <h1>Accomodation</h1> 
+                                5 Nights in Baku at West Shine Hotel or similar
+                                <h1>Sightsings</h1>
+                                Baku, Azerbaijan
+                                Fire Temple and Fire Mountain Tour
+                                Mud Volcano
+                                Rock Petro Museum
+                                Visit to Highland Park
+                                Flame towers
+                                Baku Eye Ticket
+                                Baku Boulevard
+                                Visit Nizami street
+                                Baku Crystal Hall
+                                Azerbaijan Carpet Museum
+                                Visit Little Venice
+                                Maiden Tower
+                                Palace of The Shirvanshahs
+                                Baku Old City tour
+                                28 Mall
+                                Port Baku Mall
+                                Ganjlik Mall
+                                Local Street Shopping
+                                Gabala, Azerbaijan
+                                Nohur Lake
+                                Yeddi Gozel Waterfall
+                                Gabala Tour with Cable Car Experience
+                                Gabala Shooting Club
+                                <h1>Meals</h1>
+                                5-Breakfast
+                            </pre>
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane" id="menu5">
+            <ul class="nav nav-pills flex-column bg-danger">
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#i1">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#i2">Contact Us</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" id="i1">
+                    <h1 align="center">About Us</h1>
+                    <hr>
+                    <br>
+                        <img src="flamingotravels.png" style="float:right;height:150px;width:150px;" />
+                        <h1>
+                            Who We Are?
+                        </h1>
+                        <div>
+                            Flamingo Transworld Pvt Ltd is an award winning Tour Consultant Company and one of India’s largest Tour Operator helping travel enthusiasts across the globe to discover world’s most amazing destinations. Our team of 200+ travel consultants helps you handcraft holiday of your lifetime. Our network is spread up to 35 locations across India and we have successfully planned holidays to more than 75 countries due to the immense trust and belief of our customers on us.
+                        </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                        <h1>
+                            What We Do?
+                        </h1>
+                        <img src="s1.jpg" style="float:left;height:150px;width:150px;" />
+                        <div>
+                            We are a one stop travel solution and have planned vacations successfully for more than 1,55,000 families. We provide all-inclusive group tours with in-house tour managers as well as tailor made holidays personalised as per the travellers preferred themes and interests. Our USP is providing vegetarian and jain food along with other international cuisines as per the travellers palate. We also provide services not limited to honeymoon packages, self-drive tours, ticketing, visa, hotel, cruises booking, etc.
+                        </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                        <h1>
+                            What We Beleave?
+                        </h1>
+                        <img src="s2.jpg" style="float:right;height:150px;width:150px;" />
+                        <div>
+                            We believe that Travel brings knowledge, Knowledge brings opportunity and Opportunity brings prosperity. Flamingo is not only business for us, but its a philosophy. It is family owned business where the management believes in transparency, trust, knowledge distribution and providing quality to our customers. Our customers are our biggest brand ambassadors and our employees are our biggest strengths.
+                        </div>
+                </div>
+                <div class="tab-pane" id="i2">
+                    <h1>Get In Touch With Us</h1>
+                    <br>
+                    <br>
+                    Name:
+                    <input type="text" placeholder="Enter Your Name" id="t1" />
+                    <br>
+                    <br>
+                    Email:
+                    <input type="text" placeholder="Enter Your Email" id="t2" />
+                    <br>
+                    <br>
+                    Phone Number:
+                    <input type="text" placeholder="Enter Your Phone Number" id="t3" />
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit Query" onclick="fun()"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function fun()
+        {
+            u1=document.getElementById("t1").value;
+            u2=document.getElementById("t2").value;
+            u3=document.getElementById("t3").value;
+            pat1=/^[A-z]+$/;
+            pat3=/^\d{10}$/;
+            pat2=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(u1==""||u2==""||u3=="")
+            {
+                alert("Should Not Be Blank");
+            }
+            else if(!(pat1.test(u1)))
+            {
+                alert("Enter Valid Name");
+            }
+            else if(!(pat2.test(u2)))
+            {
+                alert("Enter Valid Email");
+            }
+            else if(!(pat3.test(u3)))
+            {
+                alert("Enter Valid Phone Number");
+            }
+            else
+            {
+                alert("Your Details Have Submitted Successfully");
+            }
+        }
+    </script>
+</body>
+
+</html>
